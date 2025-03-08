@@ -1,0 +1,15 @@
+:root {
+  --white-colour: #fff;
+  --dark-colour: rgb(2, 4, 7);
+  --secondary-colour-1: rgb(5, 28, 61);
+  --secondary-colour-2: rgb(42, 128, 221);
+  --secondary-colour-3: darkgray;
+
+  /*fonts*/
+  --font-family: "Poppins", sans-serif;
+  --font-xl: 5rem;
+  --font-lg: 3rem;
+  --font-m: 2rem;
+  --font-s: 1rem;
+  --font-xs: 12px;
+}
