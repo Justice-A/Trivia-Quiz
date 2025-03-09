@@ -3,28 +3,65 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --white-colour: #fff;
-  --dark-colour: rgb(2, 4, 7);
-  --secondary-colour-1: rgb(5, 28, 61);
-  --secondary-colour-2: rgb(42, 128, 221);
-
-  /*fonts*/
-  --font-family: "Poppins", sans-serif;
-  --font-xl: 5rem;
-  --font-lg: 3.5rem;
-  --font-m: 2rem;
-  --font-s: 1.5rem;
-}
 body {
   background-image: url(../images/f701f306-c115-48c3-9183-10589b273c82.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  font-family: var(--font-family);
 }
-.title {
-  color: var(--white-colour);
+.home-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-self: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: var(--white-colour);
+  position: relative; /* Makes positioning inside this container easier */
+}
+
+.fade-scale {
+  font-size: var(--font-lg);
+  opacity: 0;
+  transform: scale(0.5);
+  animation: fadeScale 2s ease-in-out forwards;
+  text-shadow: 8px 8px 16px rgba(2, 70, 126, 0.7);
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.start {
+  color: var(--secondary-colour-1);
+  background-color: var(--white-colour);
+  font-size: var(--font-s);
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 50px;
+  font-family: var(--font-family);
+  position: absolute; /* Positioning relative to .home-container */
+  bottom: 90px; /* Adjust distance from the bottom */
+  transition: all 0.3s ease-in-out;
+  animation: pulse 2s infinite ease-in-out;
+  animation-delay: 2s, 4s; /* Button fades in after 2s, then starts pulsing after 4s */
+  visibility: hidden;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Slightly enlarge */
+  }
+  100% {
+    transform: scale(1);
+  }
 }

@@ -1,0 +1,42 @@
+body {
+  background-image: url(../images/geometrical-streaks.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: var(--font-family);
+}
+.card {
+  background-color: var(--white-colour);
+  height: 80vh;
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 80px auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.topic {
+  font-size: var(--font-s);
+  opacity: 0.8;
+  color: var(--secondary-colour-3);
+}
+.question {
+  color: var(--dark-colour);
+  font-size: var(--font-xs);
+}
+.option {
+  border: 1px solid var(--secondary-colour-1);
+  color: var(--secondary-colour-1);
+  font-size: var(--font-s);
+  padding: 10px;
+  border-radius: 50px;
+  width: 200px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
