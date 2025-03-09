@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white-colour: #fff;
+  --dark-colour: rgb(2, 4, 7);
+  --secondary-colour-1: rgb(5, 28, 61);
+  --secondary-colour-2: rgb(42, 128, 221);
+
+  /*fonts*/
+  --font-family: "Poppins", sans-serif;
+  --font-xl: 5rem;
+  --font-lg: 3.5rem;
+  --font-m: 2rem;
+  --font-s: 1.5rem;
+}
+body {
+  background-image: url(../images/f701f306-c115-48c3-9183-10589b273c82.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.title {
+  color: var(--white-colour);
+  justify-content: center;
+  align-self: center;
+}
