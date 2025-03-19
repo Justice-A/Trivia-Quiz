@@ -20,9 +20,9 @@ main {
   background-color: var(--white-colour);
   display: flex;
   flex-direction: column;
+
   gap: 20px;
   width: 70%;
-  height: 90vh;
 }
 
 .header h2 {
@@ -84,4 +84,39 @@ main {
 .category-title {
   font-size: 1.2rem;
   text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 627px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 386px) {
+  .header h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 325px) {
+  .category-card {
+    width: 150px;
+    height: 190px;
+    padding: 8px;
+  }
+
+  .category-icon {
+    font-size: 40px;
+  }
+
+  .category-title {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
